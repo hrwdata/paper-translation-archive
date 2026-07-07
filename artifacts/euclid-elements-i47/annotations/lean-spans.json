@@ -1,0 +1,49 @@
+{
+  "spans": [
+    {
+      "id": "lean.main.squareDef",
+      "alignment_id": "step-02",
+      "file": "lean/Archive/EuclidElementsI47/Statements.lean",
+      "start": { "line": 5, "column": 1 },
+      "end": { "line": 5, "column": 33 },
+      "declaration": "Archive.EuclidElementsI47.square",
+      "hover_keys": ["square"]
+    },
+    {
+      "id": "lean.main.statement",
+      "alignment_id": "step-01",
+      "file": "lean/Archive/EuclidElementsI47/Statements.lean",
+      "start": { "line": 7, "column": 1 },
+      "end": { "line": 8, "column": 47 },
+      "declaration": "Archive.EuclidElementsI47.PythagoreanStyle",
+      "hover_keys": ["pythagorean_style_statement"]
+    },
+    {
+      "id": "lean.main.claim",
+      "alignment_id": "step-03",
+      "file": "lean/Archive/EuclidElementsI47/Main.lean",
+      "start": { "line": 5, "column": 1 },
+      "end": { "line": 6, "column": 22 },
+      "declaration": "Archive.EuclidElementsI47.square_comm",
+      "hover_keys": ["square", "Nat.add_comm"]
+    },
+    {
+      "id": "lean.main.support",
+      "alignment_id": "step-04",
+      "file": "lean/Archive/EuclidElementsI47/Main.lean",
+      "start": { "line": 8, "column": 1 },
+      "end": { "line": 9, "column": 10 },
+      "declaration": "Archive.EuclidElementsI47.pythagorean_style_statement",
+      "hover_keys": ["pythagorean_style_statement"]
+    },
+    {
+      "id": "lean.main.conclusion",
+      "alignment_id": "step-05",
+      "file": "lean/Archive/EuclidElementsI47/Main.lean",
+      "start": { "line": 11, "column": 1 },
+      "end": { "line": 13, "column": 41 },
+      "declaration": "Archive.EuclidElementsI47.pythagorean_style_reverse",
+      "hover_keys": ["pythagorean_style_statement", "Nat.add_comm"]
+    }
+  ]
+}

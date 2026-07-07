@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-07-07T00:15:01.899Z",
+  "spans": [
+    {
+      "id": "lean.main.squareDef",
+      "file": "lean/Archive/EuclidElementsI47/Statements.lean",
+      "declaration": "Archive.EuclidElementsI47.square",
+      "sha256": "14ce2a684fa30b96acfe67d28da01a9423a8b0d3614c2ad8d3e8597329f02905"
+    },
+    {
+      "id": "lean.main.statement",
+      "file": "lean/Archive/EuclidElementsI47/Statements.lean",
+      "declaration": "Archive.EuclidElementsI47.PythagoreanStyle",
+      "sha256": "7e531700f27b0bb39adfe687cd160a5bdd37ce02007bb2778278beab1539612d"
+    },
+    {
+      "id": "lean.main.claim",
+      "file": "lean/Archive/EuclidElementsI47/Main.lean",
+      "declaration": "Archive.EuclidElementsI47.square_comm",
+      "sha256": "fa026c7237b4005d3545c831b33f31dd74c7a6cd9fe42165d69dcb0a6ecb21df"
+    },
+    {
+      "id": "lean.main.support",
+      "file": "lean/Archive/EuclidElementsI47/Main.lean",
+      "declaration": "Archive.EuclidElementsI47.pythagorean_style_statement",
+      "sha256": "acd5c662b226693b29d2e76fb854337dbe4ba5c8d82086b002e073de944634e2"
+    },
+    {
+      "id": "lean.main.conclusion",
+      "file": "lean/Archive/EuclidElementsI47/Main.lean",
+      "declaration": "Archive.EuclidElementsI47.pythagorean_style_reverse",
+      "sha256": "6c734725458aa5c6bd4dc2e0fc45be35af55514a623d5b7f204812164365e0ef"
+    }
+  ]
+}

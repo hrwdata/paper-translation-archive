@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "anchors": [
+    { "id": "region.p1.r01", "layer": "artifact_region", "target": { "region_id": "p1.r01" } },
+    { "id": "region.p1.r02", "layer": "artifact_region", "target": { "region_id": "p1.r02" } },
+    { "id": "region.p1.r03", "layer": "artifact_region", "target": { "region_id": "p1.r03" } },
+    { "id": "region.p1.r04", "layer": "artifact_region", "target": { "region_id": "p1.r04" } },
+    { "id": "region.p1.r05", "layer": "artifact_region", "target": { "region_id": "p1.r05" } },
+
+    { "id": "source.seg01", "layer": "source_span", "target": { "document": "source", "segment_id": "source.seg01" } },
+    { "id": "source.seg02", "layer": "source_span", "target": { "document": "source", "segment_id": "source.seg02" } },
+    { "id": "source.seg03", "layer": "source_span", "target": { "document": "source", "segment_id": "source.seg03" } },
+    { "id": "source.seg04", "layer": "source_span", "target": { "document": "source", "segment_id": "source.seg04" } },
+    { "id": "source.seg05", "layer": "source_span", "target": { "document": "source", "segment_id": "source.seg05" } },
+
+    { "id": "translation.seg01", "layer": "translation_span", "target": { "document": "translation", "segment_id": "translation.seg01" } },
+    { "id": "translation.seg02", "layer": "translation_span", "target": { "document": "translation", "segment_id": "translation.seg02" } },
+    { "id": "translation.seg03", "layer": "translation_span", "target": { "document": "translation", "segment_id": "translation.seg03" } },
+    { "id": "translation.seg04", "layer": "translation_span", "target": { "document": "translation", "segment_id": "translation.seg04" } },
+    { "id": "translation.seg05", "layer": "translation_span", "target": { "document": "translation", "segment_id": "translation.seg05" } },
+
+    { "id": "math.seg01", "layer": "math_span", "target": { "document": "math", "segment_id": "math.seg01" } },
+    { "id": "math.seg02", "layer": "math_span", "target": { "document": "math", "segment_id": "math.seg02" } },
+    { "id": "math.seg03", "layer": "math_span", "target": { "document": "math", "segment_id": "math.seg03" } },
+    { "id": "math.seg04", "layer": "math_span", "target": { "document": "math", "segment_id": "math.seg04" } },
+    { "id": "math.seg05", "layer": "math_span", "target": { "document": "math", "segment_id": "math.seg05" } },
+
+    {
+      "id": "lean.main.squareDef",
+      "layer": "lean_span",
+      "target": {
+        "file": "lean/Archive/EuclidElementsI47/Statements.lean",
+        "start": { "line": 5, "column": 1 },
+        "end": { "line": 5, "column": 33 },
+        "declaration": "Archive.EuclidElementsI47.square"
+      }
+    },
+    {
+      "id": "lean.main.statement",
+      "layer": "lean_span",
+      "target": {
+        "file": "lean/Archive/EuclidElementsI47/Statements.lean",
+        "start": { "line": 7, "column": 1 },
+        "end": { "line": 8, "column": 47 },
+        "declaration": "Archive.EuclidElementsI47.PythagoreanStyle"
+      }
+    },
+    {
+      "id": "lean.main.claim",
+      "layer": "lean_span",
+      "target": {
+        "file": "lean/Archive/EuclidElementsI47/Main.lean",
+        "start": { "line": 5, "column": 1 },
+        "end": { "line": 6, "column": 22 },
+        "declaration": "Archive.EuclidElementsI47.square_comm"
+      }
+    },
+    {
+      "id": "lean.main.support",
+      "layer": "lean_span",
+      "target": {
+        "file": "lean/Archive/EuclidElementsI47/Main.lean",
+        "start": { "line": 8, "column": 1 },
+        "end": { "line": 9, "column": 10 },
+        "declaration": "Archive.EuclidElementsI47.pythagorean_style_statement"
+      }
+    },
+    {
+      "id": "lean.main.conclusion",
+      "layer": "lean_span",
+      "target": {
+        "file": "lean/Archive/EuclidElementsI47/Main.lean",
+        "start": { "line": 11, "column": 1 },
+        "end": { "line": 13, "column": 41 },
+        "declaration": "Archive.EuclidElementsI47.pythagorean_style_reverse"
+      }
+    },
+
+    { "id": "decl.square", "layer": "theorem_name", "target": { "name": "Archive.EuclidElementsI47.square", "module": "Archive.EuclidElementsI47.Statements" } },
+    { "id": "decl.Nat.add_comm", "layer": "theorem_name", "target": { "name": "Nat.add_comm", "module": "Init" } },
+    { "id": "decl.pythagorean", "layer": "theorem_name", "target": { "name": "Archive.EuclidElementsI47.pythagorean_style_statement", "module": "Archive.EuclidElementsI47.Main" } },
+
+    { "id": "hover.square", "layer": "hover_metadata", "target": { "file": "generated/lean-hover.json", "key": "square" } },
+    { "id": "hover.Nat.add_comm", "layer": "hover_metadata", "target": { "file": "generated/lean-hover.json", "key": "Nat.add_comm" } },
+    { "id": "hover.pythagorean", "layer": "hover_metadata", "target": { "file": "generated/lean-hover.json", "key": "pythagorean_style_statement" } }
+  ],
+  "alignments": [
+    {
+      "id": "step-01",
+      "kind": "statement",
+      "members": ["region.p1.r01", "source.seg01", "translation.seg01", "math.seg01", "lean.main.statement", "decl.pythagorean", "hover.pythagorean"],
+      "display_order": 1,
+      "label": "Proposition statement"
+    },
+    {
+      "id": "step-02",
+      "kind": "construction",
+      "members": ["region.p1.r02", "source.seg02", "translation.seg02", "math.seg02", "lean.main.squareDef", "decl.square", "hover.square"],
+      "display_order": 2,
+      "label": "Square construction"
+    },
+    {
+      "id": "step-03",
+      "kind": "claim",
+      "members": ["region.p1.r03", "source.seg03", "translation.seg03", "math.seg03", "lean.main.claim", "decl.pythagorean", "hover.pythagorean"],
+      "display_order": 3,
+      "label": "Main claim"
+    },
+    {
+      "id": "step-04",
+      "kind": "support",
+      "members": ["region.p1.r04", "source.seg04", "translation.seg04", "math.seg04", "lean.main.support", "decl.Nat.add_comm", "hover.Nat.add_comm"],
+      "display_order": 4,
+      "label": "Supporting equality"
+    },
+    {
+      "id": "step-05",
+      "kind": "conclusion",
+      "members": ["region.p1.r05", "source.seg05", "translation.seg05", "math.seg05", "lean.main.conclusion", "decl.pythagorean", "hover.pythagorean"],
+      "display_order": 5,
+      "label": "Conclusion"
+    }
+  ]
+}

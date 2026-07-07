@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lean-hover.schema.json",
+  "type": "object",
+  "required": ["provenance", "entries"],
+  "properties": {
+    "provenance": {
+      "type": "object",
+      "required": ["mode", "toolchain", "generated_at", "live_server_required"],
+      "properties": {
+        "mode": { "enum": ["manual", "scripted"] },
+        "toolchain": { "type": "string", "minLength": 1 },
+        "generated_at": { "type": "string", "minLength": 1 },
+        "live_server_required": { "type": "boolean" }
+      }
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key", "name", "kind", "summary"],
+        "properties": {
+          "key": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 },
+          "kind": { "type": "string", "minLength": 1 },
+          "summary": { "type": "string", "minLength": 1 },
+          "detail": { "type": "string" },
+          "module": { "type": "string" }
+        }
+      }
+    }
+  }
+}

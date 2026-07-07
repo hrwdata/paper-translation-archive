@@ -1,0 +1,45 @@
+id: euclid-elements-i47
+slug: euclid-elements-i47
+title: "Euclid, Elements I.47"
+source:
+  kind: image
+  primary_asset: source/assets/page-001.png
+  pdf_asset: source/assets/source.pdf
+  page_label: "Book I, Proposition 47"
+  canonical_size:
+    width: 1200
+    height: 1600
+  provenance:
+    citation: "Demo page derived from a public-domain Euclid proposition excerpt for interface testing."
+    source_repository: "https://archive.org/"
+    source_institution: "Public-domain source tradition; derivative asset documented in this repository."
+  rights:
+    label: "Public Domain Mark 1.0"
+    url: "https://creativecommons.org/publicdomain/mark/1.0/"
+    details: "Region boxes refer to the canonical demo image page-001.png shipped with this artifact."
+text_layers:
+  source_segments: source/segments.json
+  translation_segments: translation/segments.json
+  math_segments: math/segments.json
+lean:
+  package_dir: lean
+  entry_modules:
+    - Archive.EuclidElementsI47.Main
+  files:
+    - lean/Archive/EuclidElementsI47/Main.lean
+    - lean/Archive/EuclidElementsI47/Statements.lean
+annotations:
+  regions: annotations/regions.json
+  alignments: annotations/alignment.graph.json
+  lean_spans: annotations/lean-spans.json
+generated:
+  bundle: generated/artifact.bundle.json
+  hover: generated/lean-hover.json
+  deps: generated/lean-deps.json
+  tactic_states: generated/lean-tactic-states.json
+validation:
+  min_region_count: 5
+  require_compiling_lean: true
+  require_snippet_sync: true
+references:
+  bibliography: references.bib

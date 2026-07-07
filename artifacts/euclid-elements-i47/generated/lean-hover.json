@@ -1,0 +1,34 @@
+{
+  "provenance": {
+    "mode": "manual",
+    "toolchain": "leanprover/lean4:v4.30.0",
+    "generated_at": "2026-07-05T00:00:00.000Z",
+    "live_server_required": false
+  },
+  "entries": [
+    {
+      "key": "square",
+      "name": "Archive.EuclidElementsI47.square",
+      "kind": "definition",
+      "module": "Archive.EuclidElementsI47.Statements",
+      "summary": "Defines the square operator used by the demo proposition.",
+      "detail": "square n := n * n"
+    },
+    {
+      "key": "Nat.add_comm",
+      "name": "Nat.add_comm",
+      "kind": "theorem",
+      "module": "Init",
+      "summary": "Static hover entry for commutativity of natural-number addition.",
+      "detail": "Used as precomputed metadata in the demo Lean panel. This is not a live Infoview query."
+    },
+    {
+      "key": "pythagorean_style_statement",
+      "name": "Archive.EuclidElementsI47.pythagorean_style_statement",
+      "kind": "theorem",
+      "module": "Archive.EuclidElementsI47.Main",
+      "summary": "Carries a proposition-style equality from hypothesis to conclusion.",
+      "detail": "This theorem is intentionally modest. It demonstrates synchronized alignment and static metadata boundaries."
+    }
+  ]
+}

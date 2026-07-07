@@ -1,0 +1,30 @@
+{
+  "provenance": {
+    "mode": "manual",
+    "toolchain": "leanprover/lean4:v4.30.0",
+    "generated_at": "2026-07-05T00:00:00.000Z",
+    "live_server_required": false
+  },
+  "declarations": [
+    {
+      "name": "Archive.EuclidElementsI47.square_comm",
+      "depends_on": [
+        "Archive.EuclidElementsI47.square",
+        "Nat.add_comm"
+      ]
+    },
+    {
+      "name": "Archive.EuclidElementsI47.pythagorean_style_statement",
+      "depends_on": [
+        "Archive.EuclidElementsI47.PythagoreanStyle"
+      ]
+    },
+    {
+      "name": "Archive.EuclidElementsI47.pythagorean_style_reverse",
+      "depends_on": [
+        "Archive.EuclidElementsI47.PythagoreanStyle",
+        "Nat.add_comm"
+      ]
+    }
+  ]
+}

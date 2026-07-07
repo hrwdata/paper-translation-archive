@@ -1,0 +1,27 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y
+      - run: echo "$HOME/.elan/bin" >> $GITHUB_PATH
+      - run: npm ci
+      - run: npm run validate
+      - run: npm run build
+      - name: Build Lean packages
+        run: |
+          for dir in artifacts/*/lean; do
+            echo "Building $dir"
+            (cd "$dir" && lake build)
+          done

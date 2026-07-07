@@ -1,0 +1,10 @@
+{
+  "document": "source",
+  "segments": [
+    { "id": "source.seg01", "kind": "heading", "text": "Proposition 47. In right-angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle." },
+    { "id": "source.seg02", "kind": "construction", "text": "Let the square on BA be described, and likewise the squares on AC and BC." },
+    { "id": "source.seg03", "kind": "claim", "text": "I say that the square on BC is equal to the squares on BA and AC." },
+    { "id": "source.seg04", "kind": "support", "text": "For parallelograms on the same base and in the same parallels are equal to one another." },
+    { "id": "source.seg05", "kind": "conclusion", "text": "Therefore the square on the side subtending the right angle is equal to the sum of the two squares on the sides containing the right angle." }
+  ]
+}

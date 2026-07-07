@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "artifact.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "slug",
+    "title",
+    "source",
+    "text_layers",
+    "lean",
+    "annotations",
+    "generated",
+    "validation",
+    "references"
+  ],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "slug": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "source": {
+      "type": "object",
+      "required": ["kind", "primary_asset", "page_label", "canonical_size", "provenance", "rights"],
+      "properties": {
+        "kind": { "enum": ["image", "pdf-page", "iiif-canvas"] },
+        "primary_asset": { "type": "string", "minLength": 1 },
+        "pdf_asset": { "type": "string" },
+        "page_label": { "type": "string", "minLength": 1 },
+        "canonical_size": {
+          "type": "object",
+          "required": ["width", "height"],
+          "properties": {
+            "width": { "type": "integer", "minimum": 1 },
+            "height": { "type": "integer", "minimum": 1 }
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "required": ["citation", "source_repository", "source_institution"],
+          "properties": {
+            "citation": { "type": "string", "minLength": 1 },
+            "source_repository": { "type": "string", "minLength": 1 },
+            "source_institution": { "type": "string", "minLength": 1 }
+          }
+        },
+        "rights": {
+          "type": "object",
+          "required": ["label", "url", "details"],
+          "properties": {
+            "label": { "type": "string", "minLength": 1 },
+            "url": { "type": "string", "minLength": 1 },
+            "details": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+    "text_layers": {
+      "type": "object",
+      "required": ["source_segments", "translation_segments", "math_segments"],
+      "properties": {
+        "source_segments": { "type": "string", "minLength": 1 },
+        "translation_segments": { "type": "string", "minLength": 1 },
+        "math_segments": { "type": "string", "minLength": 1 }
+      }
+    },
+    "lean": {
+      "type": "object",
+      "required": ["package_dir", "entry_modules", "files"],
+      "properties": {
+        "package_dir": { "type": "string", "minLength": 1 },
+        "entry_modules": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "files": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "annotations": {
+      "type": "object",
+      "required": ["regions", "alignments", "lean_spans"],
+      "properties": {
+        "regions": { "type": "string", "minLength": 1 },
+        "alignments": { "type": "string", "minLength": 1 },
+        "lean_spans": { "type": "string", "minLength": 1 }
+      }
+    },
+    "generated": {
+      "type": "object",
+      "required": ["bundle", "hover", "deps", "tactic_states"],
+      "properties": {
+        "bundle": { "type": "string", "minLength": 1 },
+        "hover": { "type": "string", "minLength": 1 },
+        "deps": { "type": "string", "minLength": 1 },
+        "tactic_states": { "type": "string", "minLength": 1 }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "required": ["min_region_count", "require_compiling_lean", "require_snippet_sync"],
+      "properties": {
+        "min_region_count": { "type": "integer", "minimum": 1 },
+        "require_compiling_lean": { "type": "boolean" },
+        "require_snippet_sync": { "type": "boolean" }
+      }
+    },
+    "references": {
+      "type": "object",
+      "required": ["bibliography"],
+      "properties": {
+        "bibliography": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
+

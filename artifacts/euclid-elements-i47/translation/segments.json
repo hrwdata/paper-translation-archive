@@ -1,0 +1,10 @@
+{
+  "document": "translation",
+  "segments": [
+    { "id": "translation.seg01", "kind": "heading", "text": "In a right triangle, the square built on the hypotenuse matches the combined area of the squares built on the two legs." },
+    { "id": "translation.seg02", "kind": "construction", "text": "Construct three squares, one on each side of the triangle, so that the geometric comparison is expressed by explicit figures." },
+    { "id": "translation.seg03", "kind": "claim", "text": "The target equality is that the area attached to the hypotenuse equals the two leg-squares taken together." },
+    { "id": "translation.seg04", "kind": "support", "text": "Euclid’s proof route proceeds through area-preserving comparisons of auxiliary figures and then combines equalities." },
+    { "id": "translation.seg05", "kind": "conclusion", "text": "The final relation is the familiar Pythagorean statement, expressed here as a synchronized English explanation layer." }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "region-annotations.schema.json",
+  "type": "object",
+  "required": ["image", "regions"],
+  "properties": {
+    "image": {
+      "type": "object",
+      "required": ["width", "height"],
+      "properties": {
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "regions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "shape", "x", "y", "width", "height"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "label": { "type": "string", "minLength": 1 },
+          "shape": { "const": "rect" },
+          "x": { "type": "number", "minimum": 0, "maximum": 1 },
+          "y": { "type": "number", "minimum": 0, "maximum": 1 },
+          "width": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 },
+          "height": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 }
+        }
+      }
+    }
+  }
+}

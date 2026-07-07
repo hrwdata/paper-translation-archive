@@ -1,0 +1,20 @@
+{
+  "provenance": {
+    "mode": "manual",
+    "toolchain": "leanprover/lean4:v4.30.0",
+    "generated_at": "2026-07-05T00:00:00.000Z",
+    "live_server_required": false
+  },
+  "states": [
+    {
+      "alignment_id": "step-03",
+      "label": "square_comm proof state",
+      "goal": "square a + square b = square b + square a"
+    },
+    {
+      "alignment_id": "step-04",
+      "label": "pythagorean_style_statement proof state",
+      "goal": "PythagoreanStyle a b c"
+    }
+  ]
+}

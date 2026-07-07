@@ -1,0 +1,776 @@
+{
+  "id": "euclid-elements-i47",
+  "slug": "euclid-elements-i47",
+  "title": "Euclid, Elements I.47",
+  "summary": "Static demo artifact bundle for Euclid, Elements I.47",
+  "source": {
+    "kind": "image",
+    "primary_asset": "source/assets/page-001.png",
+    "pdf_asset": "source/assets/source.pdf",
+    "page_label": "Book I, Proposition 47",
+    "canonical_size": {
+      "width": 1200,
+      "height": 1600
+    },
+    "provenance": {
+      "citation": "Demo page derived from a public-domain Euclid proposition excerpt for interface testing.",
+      "source_repository": "https://archive.org/",
+      "source_institution": "Public-domain source tradition; derivative asset documented in this repository."
+    },
+    "rights": {
+      "label": "Public Domain Mark 1.0",
+      "url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "details": "Region boxes refer to the canonical demo image page-001.png shipped with this artifact."
+    }
+  },
+  "textLayers": {
+    "source": {
+      "document": "source",
+      "segments": [
+        {
+          "id": "source.seg01",
+          "kind": "heading",
+          "text": "Proposition 47. In right-angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle."
+        },
+        {
+          "id": "source.seg02",
+          "kind": "construction",
+          "text": "Let the square on BA be described, and likewise the squares on AC and BC."
+        },
+        {
+          "id": "source.seg03",
+          "kind": "claim",
+          "text": "I say that the square on BC is equal to the squares on BA and AC."
+        },
+        {
+          "id": "source.seg04",
+          "kind": "support",
+          "text": "For parallelograms on the same base and in the same parallels are equal to one another."
+        },
+        {
+          "id": "source.seg05",
+          "kind": "conclusion",
+          "text": "Therefore the square on the side subtending the right angle is equal to the sum of the two squares on the sides containing the right angle."
+        }
+      ]
+    },
+    "translation": {
+      "document": "translation",
+      "segments": [
+        {
+          "id": "translation.seg01",
+          "kind": "heading",
+          "text": "In a right triangle, the square built on the hypotenuse matches the combined area of the squares built on the two legs."
+        },
+        {
+          "id": "translation.seg02",
+          "kind": "construction",
+          "text": "Construct three squares, one on each side of the triangle, so that the geometric comparison is expressed by explicit figures."
+        },
+        {
+          "id": "translation.seg03",
+          "kind": "claim",
+          "text": "The target equality is that the area attached to the hypotenuse equals the two leg-squares taken together."
+        },
+        {
+          "id": "translation.seg04",
+          "kind": "support",
+          "text": "Euclid’s proof route proceeds through area-preserving comparisons of auxiliary figures and then combines equalities."
+        },
+        {
+          "id": "translation.seg05",
+          "kind": "conclusion",
+          "text": "The final relation is the familiar Pythagorean statement, expressed here as a synchronized English explanation layer."
+        }
+      ]
+    },
+    "math": {
+      "document": "math",
+      "segments": [
+        {
+          "id": "math.seg01",
+          "kind": "statement",
+          "text": "Right-triangle square identity",
+          "latex": "c^2 = a^2 + b^2"
+        },
+        {
+          "id": "math.seg02",
+          "kind": "construction",
+          "text": "Define the square operator",
+          "latex": "\\operatorname{sq}(n) := n \\cdot n"
+        },
+        {
+          "id": "math.seg03",
+          "kind": "claim",
+          "text": "State the proposition in symbolic form",
+          "latex": "\\operatorname{sq}(c) = \\operatorname{sq}(a) + \\operatorname{sq}(b)"
+        },
+        {
+          "id": "math.seg04",
+          "kind": "support",
+          "text": "Use symmetry of addition in the final rearrangement",
+          "latex": "x + y = y + x"
+        },
+        {
+          "id": "math.seg05",
+          "kind": "conclusion",
+          "text": "Conclude the proposition statement",
+          "latex": "\\operatorname{sq}(a) + \\operatorname{sq}(b) = \\operatorname{sq}(c)"
+        }
+      ]
+    }
+  },
+  "regions": {
+    "image": {
+      "width": 1200,
+      "height": 1600
+    },
+    "regions": [
+      {
+        "id": "p1.r01",
+        "label": "Proposition heading",
+        "shape": "rect",
+        "x": 0.08,
+        "y": 0.1,
+        "width": 0.82,
+        "height": 0.08
+      },
+      {
+        "id": "p1.r02",
+        "label": "Square construction",
+        "shape": "rect",
+        "x": 0.08,
+        "y": 0.25,
+        "width": 0.82,
+        "height": 0.08
+      },
+      {
+        "id": "p1.r03",
+        "label": "Main claim",
+        "shape": "rect",
+        "x": 0.08,
+        "y": 0.4,
+        "width": 0.82,
+        "height": 0.08
+      },
+      {
+        "id": "p1.r04",
+        "label": "Supporting equality",
+        "shape": "rect",
+        "x": 0.08,
+        "y": 0.56,
+        "width": 0.82,
+        "height": 0.08
+      },
+      {
+        "id": "p1.r05",
+        "label": "Conclusion",
+        "shape": "rect",
+        "x": 0.08,
+        "y": 0.72,
+        "width": 0.82,
+        "height": 0.08
+      }
+    ]
+  },
+  "alignments": {
+    "version": 1,
+    "anchors": [
+      {
+        "id": "region.p1.r01",
+        "layer": "artifact_region",
+        "target": {
+          "region_id": "p1.r01"
+        }
+      },
+      {
+        "id": "region.p1.r02",
+        "layer": "artifact_region",
+        "target": {
+          "region_id": "p1.r02"
+        }
+      },
+      {
+        "id": "region.p1.r03",
+        "layer": "artifact_region",
+        "target": {
+          "region_id": "p1.r03"
+        }
+      },
+      {
+        "id": "region.p1.r04",
+        "layer": "artifact_region",
+        "target": {
+          "region_id": "p1.r04"
+        }
+      },
+      {
+        "id": "region.p1.r05",
+        "layer": "artifact_region",
+        "target": {
+          "region_id": "p1.r05"
+        }
+      },
+      {
+        "id": "source.seg01",
+        "layer": "source_span",
+        "target": {
+          "document": "source",
+          "segment_id": "source.seg01"
+        }
+      },
+      {
+        "id": "source.seg02",
+        "layer": "source_span",
+        "target": {
+          "document": "source",
+          "segment_id": "source.seg02"
+        }
+      },
+      {
+        "id": "source.seg03",
+        "layer": "source_span",
+        "target": {
+          "document": "source",
+          "segment_id": "source.seg03"
+        }
+      },
+      {
+        "id": "source.seg04",
+        "layer": "source_span",
+        "target": {
+          "document": "source",
+          "segment_id": "source.seg04"
+        }
+      },
+      {
+        "id": "source.seg05",
+        "layer": "source_span",
+        "target": {
+          "document": "source",
+          "segment_id": "source.seg05"
+        }
+      },
+      {
+        "id": "translation.seg01",
+        "layer": "translation_span",
+        "target": {
+          "document": "translation",
+          "segment_id": "translation.seg01"
+        }
+      },
+      {
+        "id": "translation.seg02",
+        "layer": "translation_span",
+        "target": {
+          "document": "translation",
+          "segment_id": "translation.seg02"
+        }
+      },
+      {
+        "id": "translation.seg03",
+        "layer": "translation_span",
+        "target": {
+          "document": "translation",
+          "segment_id": "translation.seg03"
+        }
+      },
+      {
+        "id": "translation.seg04",
+        "layer": "translation_span",
+        "target": {
+          "document": "translation",
+          "segment_id": "translation.seg04"
+        }
+      },
+      {
+        "id": "translation.seg05",
+        "layer": "translation_span",
+        "target": {
+          "document": "translation",
+          "segment_id": "translation.seg05"
+        }
+      },
+      {
+        "id": "math.seg01",
+        "layer": "math_span",
+        "target": {
+          "document": "math",
+          "segment_id": "math.seg01"
+        }
+      },
+      {
+        "id": "math.seg02",
+        "layer": "math_span",
+        "target": {
+          "document": "math",
+          "segment_id": "math.seg02"
+        }
+      },
+      {
+        "id": "math.seg03",
+        "layer": "math_span",
+        "target": {
+          "document": "math",
+          "segment_id": "math.seg03"
+        }
+      },
+      {
+        "id": "math.seg04",
+        "layer": "math_span",
+        "target": {
+          "document": "math",
+          "segment_id": "math.seg04"
+        }
+      },
+      {
+        "id": "math.seg05",
+        "layer": "math_span",
+        "target": {
+          "document": "math",
+          "segment_id": "math.seg05"
+        }
+      },
+      {
+        "id": "lean.main.squareDef",
+        "layer": "lean_span",
+        "target": {
+          "file": "lean/Archive/EuclidElementsI47/Statements.lean",
+          "start": {
+            "line": 5,
+            "column": 1
+          },
+          "end": {
+            "line": 5,
+            "column": 33
+          },
+          "declaration": "Archive.EuclidElementsI47.square"
+        }
+      },
+      {
+        "id": "lean.main.statement",
+        "layer": "lean_span",
+        "target": {
+          "file": "lean/Archive/EuclidElementsI47/Statements.lean",
+          "start": {
+            "line": 7,
+            "column": 1
+          },
+          "end": {
+            "line": 8,
+            "column": 47
+          },
+          "declaration": "Archive.EuclidElementsI47.PythagoreanStyle"
+        }
+      },
+      {
+        "id": "lean.main.claim",
+        "layer": "lean_span",
+        "target": {
+          "file": "lean/Archive/EuclidElementsI47/Main.lean",
+          "start": {
+            "line": 5,
+            "column": 1
+          },
+          "end": {
+            "line": 6,
+            "column": 22
+          },
+          "declaration": "Archive.EuclidElementsI47.square_comm"
+        }
+      },
+      {
+        "id": "lean.main.support",
+        "layer": "lean_span",
+        "target": {
+          "file": "lean/Archive/EuclidElementsI47/Main.lean",
+          "start": {
+            "line": 8,
+            "column": 1
+          },
+          "end": {
+            "line": 9,
+            "column": 10
+          },
+          "declaration": "Archive.EuclidElementsI47.pythagorean_style_statement"
+        }
+      },
+      {
+        "id": "lean.main.conclusion",
+        "layer": "lean_span",
+        "target": {
+          "file": "lean/Archive/EuclidElementsI47/Main.lean",
+          "start": {
+            "line": 11,
+            "column": 1
+          },
+          "end": {
+            "line": 13,
+            "column": 41
+          },
+          "declaration": "Archive.EuclidElementsI47.pythagorean_style_reverse"
+        }
+      },
+      {
+        "id": "decl.square",
+        "layer": "theorem_name",
+        "target": {
+          "name": "Archive.EuclidElementsI47.square",
+          "module": "Archive.EuclidElementsI47.Statements"
+        }
+      },
+      {
+        "id": "decl.Nat.add_comm",
+        "layer": "theorem_name",
+        "target": {
+          "name": "Nat.add_comm",
+          "module": "Init"
+        }
+      },
+      {
+        "id": "decl.pythagorean",
+        "layer": "theorem_name",
+        "target": {
+          "name": "Archive.EuclidElementsI47.pythagorean_style_statement",
+          "module": "Archive.EuclidElementsI47.Main"
+        }
+      },
+      {
+        "id": "hover.square",
+        "layer": "hover_metadata",
+        "target": {
+          "file": "generated/lean-hover.json",
+          "key": "square"
+        }
+      },
+      {
+        "id": "hover.Nat.add_comm",
+        "layer": "hover_metadata",
+        "target": {
+          "file": "generated/lean-hover.json",
+          "key": "Nat.add_comm"
+        }
+      },
+      {
+        "id": "hover.pythagorean",
+        "layer": "hover_metadata",
+        "target": {
+          "file": "generated/lean-hover.json",
+          "key": "pythagorean_style_statement"
+        }
+      }
+    ],
+    "alignments": [
+      {
+        "id": "step-01",
+        "kind": "statement",
+        "members": [
+          "region.p1.r01",
+          "source.seg01",
+          "translation.seg01",
+          "math.seg01",
+          "lean.main.statement",
+          "decl.pythagorean",
+          "hover.pythagorean"
+        ],
+        "display_order": 1,
+        "label": "Proposition statement"
+      },
+      {
+        "id": "step-02",
+        "kind": "construction",
+        "members": [
+          "region.p1.r02",
+          "source.seg02",
+          "translation.seg02",
+          "math.seg02",
+          "lean.main.squareDef",
+          "decl.square",
+          "hover.square"
+        ],
+        "display_order": 2,
+        "label": "Square construction"
+      },
+      {
+        "id": "step-03",
+        "kind": "claim",
+        "members": [
+          "region.p1.r03",
+          "source.seg03",
+          "translation.seg03",
+          "math.seg03",
+          "lean.main.claim",
+          "decl.pythagorean",
+          "hover.pythagorean"
+        ],
+        "display_order": 3,
+        "label": "Main claim"
+      },
+      {
+        "id": "step-04",
+        "kind": "support",
+        "members": [
+          "region.p1.r04",
+          "source.seg04",
+          "translation.seg04",
+          "math.seg04",
+          "lean.main.support",
+          "decl.Nat.add_comm",
+          "hover.Nat.add_comm"
+        ],
+        "display_order": 4,
+        "label": "Supporting equality"
+      },
+      {
+        "id": "step-05",
+        "kind": "conclusion",
+        "members": [
+          "region.p1.r05",
+          "source.seg05",
+          "translation.seg05",
+          "math.seg05",
+          "lean.main.conclusion",
+          "decl.pythagorean",
+          "hover.pythagorean"
+        ],
+        "display_order": 5,
+        "label": "Conclusion"
+      }
+    ]
+  },
+  "lean": {
+    "packageDir": "lean",
+    "entryModules": [
+      "Archive.EuclidElementsI47.Main"
+    ],
+    "files": [
+      {
+        "path": "lean/Archive/EuclidElementsI47/Main.lean",
+        "language": "lean",
+        "content": "import Archive.EuclidElementsI47.Statements\n\nnamespace Archive.EuclidElementsI47\n\ntheorem square_comm (a b : Nat) : square a + square b = square b + square a := by\n  rw [Nat.add_comm]\n\ntheorem pythagorean_style_statement (a b c : Nat) (h : PythagoreanStyle a b c) : PythagoreanStyle a b c := by\n  exact h\n\ntheorem pythagorean_style_reverse (a b c : Nat) (h : PythagoreanStyle a b c) :\n    square a + square b = square c := by\n  simpa [PythagoreanStyle] using h.symm\n\nend Archive.EuclidElementsI47\n"
+      },
+      {
+        "path": "lean/Archive/EuclidElementsI47/Statements.lean",
+        "language": "lean",
+        "content": "import ArchiveShared.Basics\n\nnamespace Archive.EuclidElementsI47\n\ndef square (n : Nat) : Nat := ArchiveShared.square n\n\ndef PythagoreanStyle (a b c : Nat) : Prop :=\n  square c = square a + square b\n\nend Archive.EuclidElementsI47\n"
+      }
+    ],
+    "spans": [
+      {
+        "id": "lean.main.squareDef",
+        "alignment_id": "step-02",
+        "file": "lean/Archive/EuclidElementsI47/Statements.lean",
+        "start": {
+          "line": 5,
+          "column": 1
+        },
+        "end": {
+          "line": 5,
+          "column": 33
+        },
+        "declaration": "Archive.EuclidElementsI47.square",
+        "hover_keys": [
+          "square"
+        ]
+      },
+      {
+        "id": "lean.main.statement",
+        "alignment_id": "step-01",
+        "file": "lean/Archive/EuclidElementsI47/Statements.lean",
+        "start": {
+          "line": 7,
+          "column": 1
+        },
+        "end": {
+          "line": 8,
+          "column": 47
+        },
+        "declaration": "Archive.EuclidElementsI47.PythagoreanStyle",
+        "hover_keys": [
+          "pythagorean_style_statement"
+        ]
+      },
+      {
+        "id": "lean.main.claim",
+        "alignment_id": "step-03",
+        "file": "lean/Archive/EuclidElementsI47/Main.lean",
+        "start": {
+          "line": 5,
+          "column": 1
+        },
+        "end": {
+          "line": 6,
+          "column": 22
+        },
+        "declaration": "Archive.EuclidElementsI47.square_comm",
+        "hover_keys": [
+          "square",
+          "Nat.add_comm"
+        ]
+      },
+      {
+        "id": "lean.main.support",
+        "alignment_id": "step-04",
+        "file": "lean/Archive/EuclidElementsI47/Main.lean",
+        "start": {
+          "line": 8,
+          "column": 1
+        },
+        "end": {
+          "line": 9,
+          "column": 10
+        },
+        "declaration": "Archive.EuclidElementsI47.pythagorean_style_statement",
+        "hover_keys": [
+          "pythagorean_style_statement"
+        ]
+      },
+      {
+        "id": "lean.main.conclusion",
+        "alignment_id": "step-05",
+        "file": "lean/Archive/EuclidElementsI47/Main.lean",
+        "start": {
+          "line": 11,
+          "column": 1
+        },
+        "end": {
+          "line": 13,
+          "column": 41
+        },
+        "declaration": "Archive.EuclidElementsI47.pythagorean_style_reverse",
+        "hover_keys": [
+          "pythagorean_style_statement",
+          "Nat.add_comm"
+        ]
+      }
+    ],
+    "snippets": [
+      {
+        "id": "lean.main.squareDef",
+        "file": "lean/Archive/EuclidElementsI47/Statements.lean",
+        "declaration": "Archive.EuclidElementsI47.square",
+        "sha256": "14ce2a684fa30b96acfe67d28da01a9423a8b0d3614c2ad8d3e8597329f02905",
+        "text": "def square (n : Nat) : Nat := Ar"
+      },
+      {
+        "id": "lean.main.statement",
+        "file": "lean/Archive/EuclidElementsI47/Statements.lean",
+        "declaration": "Archive.EuclidElementsI47.PythagoreanStyle",
+        "sha256": "7e531700f27b0bb39adfe687cd160a5bdd37ce02007bb2778278beab1539612d",
+        "text": "def PythagoreanStyle (a b c : Nat) : Prop :=\n  square c = square a + square b"
+      },
+      {
+        "id": "lean.main.claim",
+        "file": "lean/Archive/EuclidElementsI47/Main.lean",
+        "declaration": "Archive.EuclidElementsI47.square_comm",
+        "sha256": "fa026c7237b4005d3545c831b33f31dd74c7a6cd9fe42165d69dcb0a6ecb21df",
+        "text": "theorem square_comm (a b : Nat) : square a + square b = square b + square a := by\n  rw [Nat.add_comm]"
+      },
+      {
+        "id": "lean.main.support",
+        "file": "lean/Archive/EuclidElementsI47/Main.lean",
+        "declaration": "Archive.EuclidElementsI47.pythagorean_style_statement",
+        "sha256": "acd5c662b226693b29d2e76fb854337dbe4ba5c8d82086b002e073de944634e2",
+        "text": "theorem pythagorean_style_statement (a b c : Nat) (h : PythagoreanStyle a b c) : PythagoreanStyle a b c := by\n  exact h"
+      },
+      {
+        "id": "lean.main.conclusion",
+        "file": "lean/Archive/EuclidElementsI47/Main.lean",
+        "declaration": "Archive.EuclidElementsI47.pythagorean_style_reverse",
+        "sha256": "6c734725458aa5c6bd4dc2e0fc45be35af55514a623d5b7f204812164365e0ef",
+        "text": "theorem pythagorean_style_reverse (a b c : Nat) (h : PythagoreanStyle a b c) :\n    square a + square b = square c := by\n  simpa [PythagoreanStyle] using h.symm"
+      }
+    ]
+  },
+  "metadata": {
+    "hover": {
+      "provenance": {
+        "mode": "manual",
+        "toolchain": "leanprover/lean4:v4.30.0",
+        "generated_at": "2026-07-05T00:00:00.000Z",
+        "live_server_required": false
+      },
+      "entries": [
+        {
+          "key": "square",
+          "name": "Archive.EuclidElementsI47.square",
+          "kind": "definition",
+          "module": "Archive.EuclidElementsI47.Statements",
+          "summary": "Defines the square operator used by the demo proposition.",
+          "detail": "square n := n * n"
+        },
+        {
+          "key": "Nat.add_comm",
+          "name": "Nat.add_comm",
+          "kind": "theorem",
+          "module": "Init",
+          "summary": "Static hover entry for commutativity of natural-number addition.",
+          "detail": "Used as precomputed metadata in the demo Lean panel. This is not a live Infoview query."
+        },
+        {
+          "key": "pythagorean_style_statement",
+          "name": "Archive.EuclidElementsI47.pythagorean_style_statement",
+          "kind": "theorem",
+          "module": "Archive.EuclidElementsI47.Main",
+          "summary": "Carries a proposition-style equality from hypothesis to conclusion.",
+          "detail": "This theorem is intentionally modest. It demonstrates synchronized alignment and static metadata boundaries."
+        }
+      ]
+    },
+    "deps": {
+      "provenance": {
+        "mode": "manual",
+        "toolchain": "leanprover/lean4:v4.30.0",
+        "generated_at": "2026-07-05T00:00:00.000Z",
+        "live_server_required": false
+      },
+      "declarations": [
+        {
+          "name": "Archive.EuclidElementsI47.square_comm",
+          "depends_on": [
+            "Archive.EuclidElementsI47.square",
+            "Nat.add_comm"
+          ]
+        },
+        {
+          "name": "Archive.EuclidElementsI47.pythagorean_style_statement",
+          "depends_on": [
+            "Archive.EuclidElementsI47.PythagoreanStyle"
+          ]
+        },
+        {
+          "name": "Archive.EuclidElementsI47.pythagorean_style_reverse",
+          "depends_on": [
+            "Archive.EuclidElementsI47.PythagoreanStyle",
+            "Nat.add_comm"
+          ]
+        }
+      ]
+    },
+    "tacticStates": {
+      "provenance": {
+        "mode": "manual",
+        "toolchain": "leanprover/lean4:v4.30.0",
+        "generated_at": "2026-07-05T00:00:00.000Z",
+        "live_server_required": false
+      },
+      "states": [
+        {
+          "alignment_id": "step-03",
+          "label": "square_comm proof state",
+          "goal": "square a + square b = square b + square a"
+        },
+        {
+          "alignment_id": "step-04",
+          "label": "pythagorean_style_statement proof state",
+          "goal": "PythagoreanStyle a b c"
+        }
+      ]
+    }
+  },
+  "references": {
+    "bibliography": "references.bib"
+  },
+  "builtAt": "2026-07-07T00:15:01.901Z",
+  "repoRelativeDir": "artifacts/euclid-elements-i47"
+}

@@ -1,0 +1,6 @@
+name = "ArchiveShared"
+version = "0.1.0"
+defaultTargets = ["ArchiveShared"]
+
+[[lean_lib]]
+name = "ArchiveShared"

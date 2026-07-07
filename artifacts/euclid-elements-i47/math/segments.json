@@ -1,0 +1,10 @@
+{
+  "document": "math",
+  "segments": [
+    { "id": "math.seg01", "kind": "statement", "text": "Right-triangle square identity", "latex": "c^2 = a^2 + b^2" },
+    { "id": "math.seg02", "kind": "construction", "text": "Define the square operator", "latex": "\\operatorname{sq}(n) := n \\cdot n" },
+    { "id": "math.seg03", "kind": "claim", "text": "State the proposition in symbolic form", "latex": "\\operatorname{sq}(c) = \\operatorname{sq}(a) + \\operatorname{sq}(b)" },
+    { "id": "math.seg04", "kind": "support", "text": "Use symmetry of addition in the final rearrangement", "latex": "x + y = y + x" },
+    { "id": "math.seg05", "kind": "conclusion", "text": "Conclude the proposition statement", "latex": "\\operatorname{sq}(a) + \\operatorname{sq}(b) = \\operatorname{sq}(c)" }
+  ]
+}

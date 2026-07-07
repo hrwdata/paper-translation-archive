@@ -1,0 +1,12 @@
+{
+  "version": 7,
+  "packagesDir": ".lake/packages",
+  "packages": [
+    {
+      "name": "ArchiveShared",
+      "type": "path",
+      "dir": "../../../lean-shared",
+      "inherited": false
+    }
+  ]
+}

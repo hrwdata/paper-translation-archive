@@ -1,0 +1,13 @@
+{
+  "image": {
+    "width": 1200,
+    "height": 1600
+  },
+  "regions": [
+    { "id": "p1.r01", "label": "Proposition heading", "shape": "rect", "x": 0.08, "y": 0.10, "width": 0.82, "height": 0.08 },
+    { "id": "p1.r02", "label": "Square construction", "shape": "rect", "x": 0.08, "y": 0.25, "width": 0.82, "height": 0.08 },
+    { "id": "p1.r03", "label": "Main claim", "shape": "rect", "x": 0.08, "y": 0.40, "width": 0.82, "height": 0.08 },
+    { "id": "p1.r04", "label": "Supporting equality", "shape": "rect", "x": 0.08, "y": 0.56, "width": 0.82, "height": 0.08 },
+    { "id": "p1.r05", "label": "Conclusion", "shape": "rect", "x": 0.08, "y": 0.72, "width": 0.82, "height": 0.08 }
+  ]
+}

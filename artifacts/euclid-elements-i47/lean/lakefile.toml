@@ -1,0 +1,10 @@
+name = "EuclidElementsI47"
+version = "0.1.0"
+defaultTargets = ["Archive"]
+
+[[require]]
+name = "ArchiveShared"
+path = "../../../lean-shared"
+
+[[lean_lib]]
+name = "Archive"
